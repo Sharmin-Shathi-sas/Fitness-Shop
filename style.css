@@ -98,7 +98,7 @@ body {
 .banner-picture {
     margin-left: 25em;
     margin-top: 0;
-    background-image: url('/images/banner-Img.png');
+    background-image: url('images/banner-Img.png');
     height: 38em;
     width: 50%;
     background-repeat: no-repeat;
@@ -211,6 +211,33 @@ body {
     border-radius: 1em;
     padding: 1.5em;
   }
+  .run-description{
+    width: 40%;
+  }
+  
+  .run-img>img{
+    width: 25em;
+    height: 22em;
+    margin-top: .5em;
+    border-radius: .5em;
+    object-fit: none;
+    object-position: 66% 33%;
+  }
+  #member-1{
+    background-image: url('/images/exercise1.jpg');
+}
+.team-member{
+    width: 25em;
+    color: bisque;
+    height: 15em;
+    background-repeat: no-repeat;
+}.team-member>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
 @media screen and (max-width: 576px) {
     .nav-container {
         padding: 2em;
@@ -241,7 +268,7 @@ body {
     .banner-picture {
         /* text-align: center; */
         margin: 0;
-        width: 80%;
+        width: 90%;
 
 
     }
@@ -253,7 +280,7 @@ body {
 
     .picture-div-1 {
         top: 10%;
-        right: -70%;
+        right: -60%;
         text-align: left;
     }
 
@@ -274,4 +301,29 @@ body {
         margin: 0;
         padding: 0;
     }
+    .run-extra-section{
+        width: 80%;
+        /* margin: 2em; */
+        /* padding: 2em; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .run-description{
+        width:100%;
+        padding-top: 0;
+      }
+      .run-button{
+        width: 100%;
+        padding: 1.2em;
+        margin-top: 0.5em;
+      }
+      .run-img>img{
+        width: 20em;
+        height: 15em;
+        margin-top: 1.5em;
+        border-radius: .5em;
+        object-fit: none;
+        object-position: 66% 28%;
+      }
 }
