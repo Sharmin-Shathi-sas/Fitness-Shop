@@ -214,7 +214,9 @@ body {
   .run-description{
     width: 40%;
   }
-  
+  .run-description>p{
+    opacity: .5;
+  }
   .run-img>img{
     width: 25em;
     height: 22em;
@@ -298,7 +300,21 @@ body {
     padding: 0;
 }
 
+footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.5em);
+}
 
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 5em;
+    gap: 6em;
+    padding: 3em 10em;
+}
+.footer-section>h2{
+    margin: 0;
+}
 
 @media screen and (max-width: 576px) {
     .nav-container {
@@ -409,5 +425,12 @@ body {
         justify-self: center;
         align-self: center;
         
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        padding: 2em;
+        margin: 0;
     }
 }
