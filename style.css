@@ -223,19 +223,81 @@ body {
     object-fit: none;
     object-position: 66% 33%;
   }
-  #member-1{
-    background-image: url('/images/exercise1.jpg');
+.team-description{
+    text-align: center;
+}
+.team-description>h2{
+    font-size: 50px;
+}
+.team-description>p{
+    opacity: .5;
+}
+#member-1{
+    background-image: url('images/trainer1.png');
+}
+#member-2{
+    background-image: url('images/trainer2.png');
+}
+#member-3{
+    background-image: url('images/trainer3.png');
+}
+#member-4{
+    background-image: url('images/trainer4.png');
+}
+#member-5{
+    background-image: url('images/trainer5.png');
+}
+#member-6{
+    background-image: url('images/trainer6.png');
+}
+/* .team-container{
+    padding: 6em;
+} */
+.team-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(.5em);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin: 0 10.5em;
+}
+
+.team-info>h2{
+    font-size: 50px;
 }
 .team-member{
-    width: 25em;
-    color: bisque;
-    height: 15em;
+    width: 22em;
+    height: 16em;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-}.team-member>img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    border-radius: 1em;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    
 }
+
+.member-info{
+    position: relative;
+    top: 72%;
+    left: 8%;
+    font-size: 1.2em;
+    width: 70%;
+}
+
+.member-info>h4{
+    margin: 0;
+    padding: 0;
+}
+.member-info>p{
+    opacity:.5;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 @media screen and (max-width: 576px) {
@@ -319,11 +381,33 @@ body {
         margin-top: 0.5em;
       }
       .run-img>img{
-        width: 20em;
+        width: 22em;
         height: 15em;
         margin-top: 1.5em;
         border-radius: .5em;
         object-fit: none;
         object-position: 66% 28%;
       }
+      .team-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(.5em);
+        border-radius: 1em;
+        padding: 2em;
+        margin: 2em;
+      }
+      .team-member{
+        width: 18em;
+        height: 16em;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 1em;
+        padding: 0;
+        justify-self: center;
+        align-self: center;
+        
+    }
 }
